@@ -1,0 +1,63 @@
+:root {
+    --background-color-light: #ffffff;
+    --background-color-dark: #000000;
+    --text-color-light: #000000;
+    --text-color-dark: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: Arial, sans-serif;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color-light);
+    transition: background-color 0.3s;
+    z-index: -1; /* Place the mask behind the content */
+}
+
+.mode-toggle {
+    display: none;
+}
+
+.mask .mode-toggle-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px;
+}
+
+.mask .mode-toggle-label:hover {
+    background-color: #555;
+}
+
+.mask .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the mask */
+    padding: 20px;
+    color: var(--text-color-light); /* Default text color for light mode */
+    background-color: var(--background-color-light); /* Default background color for light mode */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.mode-toggle:checked ~ .mask {
+    background-color: var(--background-color-dark);
+}
+
+.mode-toggle:checked ~ .mask .content {
+    color: var(--text-color-dark); /* Text color for dark mode */
+    background-color: var(--background-color-dark); /* Background color for dark mode */
+}

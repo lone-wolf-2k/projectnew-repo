@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey_form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time for the feedback</p>
+    </header>
+    <form id="survey-form" action="">
+
+        <fieldset class="first">
+
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter Name" name="name" required>
+        
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter Email" name="email" required >
+
+        <label for="number" id="number-label">Enter Age</label>
+        <input type="number" id="number" placeholder="enter age" name="age" required min="18" max="40">
+        </fieldset>
+
+        <fieldset class="second">
+        <label for="dropdown">Select an option</label>
+        <select id="dropdown" name="option">
+            <option value="0">Select an option</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Part time job</option>
+            <option value="4">None</option>
+        </select>
+
+        </fieldset>
+
+        <fieldset class="radio">
+
+        <label>Select Gender</label>
+        <label><input id="radiotype" type="radio" name="gender" value="Male"> Male</label>
+        <label><input id="radiotype" type="radio" name="gender" value="Female"> Female</label>
+        <label><input id="radiotype" type="radio" name="gender" value="Others"> Others</label>
+        </fieldset>
+
+        <fieldset class="fourth">
+
+        <label>Your Interests?</label>
+        <label><input id="interest" type="checkbox" value="Back-end Developement" name="interest"> Back-end Developement</label>
+        <label><input id="interest" type="checkbox" value="Front-end Developement" name="interest"> Front-end Developement</label>
+        <label><input id="interest" type="checkbox" value="Full-Stack Development" name="interest"> Full-Stack Development</label>
+
+        </fieldset>
+        
+        <fieldset class="fifth">
+
+        <label for="textarea">Any other information</label>
+        <textarea id="textarea" name="textarea"></textarea>
+        </fieldset>
+        <input id="submit" type="submit">
+       
+
+
+    </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<p><span> <span class="bold">Sodium </span> 160mg </span> <span class="bold">7%</span></p>

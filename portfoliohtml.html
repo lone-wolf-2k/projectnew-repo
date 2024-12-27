@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <link rel="stylesheet" href="portfolionew.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 id="name">Yamank Pal</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="toggle" class="toggle">
+        <div class="toggle-mode">
+            <lable for="toggle" class="switch">Day/Night</lable>
+        
+    </header>
+
+    <div class="content">
+    <div class="home">
+    <section id="home">
+        <h2>Welcome to My Portfolio😁</h2>
+        <p>Hello! I'm Yamank Pal, a passionate developer. I am currently learning HTML & CSS.</p>
+        <div id="social_icons">
+            <a href="https://www.instagram.com/yamank_/" target="_blank"><img src="instagram.jpg" id="insta"></a>
+            <a href="https://www.facebook.com/yamank.pal/" target="_blank"><img src="facebook.jpg" id="fb"></a>
+            <a href="https://www.linkedin.com/in/yamank-pal-a580681a0" target="_blank"><img src="linkedin.jpg" id="linkedin"></a>
+            <a href="mailto:yamank2000@gmail.com target="_blank"><img src="gmail.jpg" id="gmail"></a>
+        </div>
+        <a href="resume.pdf" download="Yamank's Resume" class="resume_button">Download Resume</a>
+        <img align="right" src="yamank1.jpg" alt="yamank's photo" id="profilepic">
+    </section>
+</div>
+
+    <section id="about">
+        <h2>About Me☺️</h2>
+        <p>I am an aspiring web developer currently enhancing my skills in HTML, CSS, and JavaScript. With a strong passion for building creative and user-friendly websites, I enjoy turning ideas into interactive and functional designs.</p>
+            <p>I thrive on learning new technologies and overcoming challenges to improve my development capabilities.<span id="span1">...</span> <span class="mybox1" id="mybox1id">My goal is to grow into a full-fledged developer, contributing to impactful projects and continuously expanding my knowledge in web development and beyond.</span></p>
+            <button id="mybuttonid" class="read-more" onclick="changeReadMore()">Read More</button>
+            <img align="left" src="yamank2new.jpg" alt="About Image" id="aboutimage">
+            <script src="readmore.js"></script>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills🤓</h2>
+        <p>HTML</p>
+        <div class="container">
+            <div class="skill html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+            <div class="skill css">75%</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects📚</h2>
+        <div class="project-container">
+        <div id="project-1">
+            <h3>Blog Website</h3>
+            <p>This is the first project which I made using HTML & CSS.</p> <p> In this project I had show cased about my trip to Maharashtra and my experience throughout my journey</p>
+            <a href="blogwebsite.html" target="_blank">Open Project</a>
+        </div>
+        <div id="project-2">
+            <h3>Tribute Page</h3>
+            <p>This is the tribute page which i amde to give tribute to one of my most favourite Anime series. </p>
+            <a href="tributepage.html" target="_blank">Open Project</a>
+        </div>
+        <div id="project-3">
+            <h3>Form</h3>
+            <p>This is a temporary form which i made using HTML & CSS.</p>
+            <a href="freecodecamp_survey_form.html" target="_blank">Open Project</a>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me📞</h2>
+        <form>
+            <fieldset id="namefield">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            </fieldset>
+            
+            <fieldset id="emailfield">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset id="messagearea">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            </fieldset>
+            <fieldset id="submitbutton">
+            <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        
+        <div class="footer-buttons">
+            <button><a href="tel:+919717824978"><img src="phone.jpg" alt="Call" id="call"></a></button>
+            <button><a href="mailto:yamank2000@gmail.com"><img src="gmail.jpg" alt="Email" id="email_footer"></a></button>
+            <p>&copy; 2024 Yamank Pal</p>
+        </div>
+    </footer>
+</div>
+</div>
+</body>
+</html>
